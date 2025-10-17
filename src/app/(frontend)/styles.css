@@ -1,6 +1,4 @@
-:root {
-  --font-mono: 'Roboto Mono', monospace;
-}
+@import 'tailwindcss';
 
 * {
   box-sizing: border-box;
@@ -72,7 +70,7 @@ p {
 }
 
 a {
-  color: currentColor;
+  /* color: currentColor; */
 
   &:focus {
     opacity: 0.8;

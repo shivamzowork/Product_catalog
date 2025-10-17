@@ -11,6 +11,21 @@ export const Media: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'url',
+      type: 'text',
+      required: false, // Changed to false to allow migration
+      admin: {
+        description: 'Supabase Storage URL',
+      },
+    },
+    {
+      name: 'supabasePath',
+      type: 'text',
+      admin: {
+        description: 'Path in Supabase Storage bucket',
+      },
+    },
   ],
-  upload: true,
+  upload: false, // Disable Payload's built-in upload since we're using Supabase
 }
